@@ -3,9 +3,9 @@ Lambda function identifies stale EBS snapshots that are not associated with an a
 
 ![pic](https://github.com/user-attachments/assets/e6bbac64-e55e-4036-879f-6047ed4d3ae2)
 
-Problem Statement: Developers in an organization forgot to delete EBS volume snapshots after working on EC2 instances. When snapshots go unnoticed for a while, they lead to unnecessary cloud costs, which can be simply avoided by notifications or by automating the removal of such stale resources.
+**Problem Statement:** Developers in an organization forgot to delete EBS volume snapshots after working on EC2 instances. When snapshots go unnoticed for a while, they lead to unnecessary cloud costs, which can be simply avoided by notifications or by automating the removal of such stale resources.
 
-To solve this, I opted to delete them by leveraging AWS Lambda function that runs a custom Python script that:
+**To solve this**, I opted to delete them by leveraging AWS Lambda function that runs a custom Python script that:
 
 - Retrieves all EBS snapshots in the user account.
 - Filters out stale snapshots that haven’t been accessed in a while.
